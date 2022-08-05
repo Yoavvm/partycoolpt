@@ -27,6 +27,10 @@
         <label for="companyName">{{languageService.languageConfig[languageService.selectedLanguage].companyName}}</label>
         <input id="companyName" type="text">
     </div>
+    <div class="form-item">
+        <label for="eventDate">{{languageService.languageConfig[languageService.selectedLanguage].eventDate}}</label>
+        <input id="eventDate" type="date" min="{{currentDate | date:'y-0M-0d' }}">
+    </div>
     
     
 </div>

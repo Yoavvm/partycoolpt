@@ -12,6 +12,8 @@ export class BookEventFormComponent implements OnInit {
 
   constructor(public languageService: LanguageService) { }
 
+  public currentDate = Date.now();
+
   ngOnInit(): void {
   }
 
