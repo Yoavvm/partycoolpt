@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LanguageService } from 'src/app/services/language.service';
 
 
 
@@ -9,21 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BookEventFormComponent implements OnInit {
 
-  constructor() { }
-
-  public selectedLanguage = 'hebrew';
-  public langaugeConfig:any = {
-    hebrew: {
-      fullName: 'שם מלא',
-      email: 'אימייל',
-      mainCharacter: 'שם החוגג/ת',
-      mainCharacterAge: 'גיל החוגג/ת',
-      numberOfParticipants: 'מספר משתתפים',
-      phoneNumber: 'מספר טלפון',
-      companyName: 'שם החברה',
-      eventDate: 'תאריך האירוע'
-    }
-  }
+  constructor(public languageService: LanguageService) { }
 
   ngOnInit(): void {
   }
