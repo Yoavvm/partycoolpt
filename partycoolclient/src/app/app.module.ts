@@ -8,6 +8,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { MainRouteComponent } from './components/main-route/main-route.component';
 import { BookingRouteComponent } from './components/booking-route/booking-route.component';
 import { OurServicesRouteComponent } from './components/our-services-route/our-services-route.component';
+import { FormsModule } from '@angular/forms';
+import { BookEventFormComponent } from './components/book-event-form/book-event-form.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { OurServicesRouteComponent } from './components/our-services-route/our-s
     FooterComponent,
     MainRouteComponent,
     BookingRouteComponent,
-    OurServicesRouteComponent
+    OurServicesRouteComponent,
+    BookEventFormComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
