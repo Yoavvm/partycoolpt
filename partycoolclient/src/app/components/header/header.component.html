@@ -1,5 +1,13 @@
-<section>
-    <span class="material-icons">menu</span>
+<section class="dropdown">
+    <button class="dropbtn">
+        <span class="material-icons">menu</span>
+    </button>
+
+    <div class="dropdown-content">
+        <div (click)="navigateOnClick('/')">ראשי</div>
+        <div (click)="navigateOnClick('book')">הזמן אירוע</div>
+        <div (click)="navigateOnClick('services')">שירותים</div>
+    </div>
 </section>
 
 
@@ -22,4 +30,3 @@
         🔍<input type="text" placeholder="מה אתם מחפשים">
     </div>
 </section>
-

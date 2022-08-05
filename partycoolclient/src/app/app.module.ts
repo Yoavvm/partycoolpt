@@ -5,12 +5,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { MainRouteComponent } from './components/main-route/main-route.component';
+import { BookingRouteComponent } from './components/booking-route/booking-route.component';
+import { OurServicesRouteComponent } from './components/our-services-route/our-services-route.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    MainRouteComponent,
+    BookingRouteComponent,
+    OurServicesRouteComponent
   ],
   imports: [
     BrowserModule,
