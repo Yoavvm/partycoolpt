@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { AvailableLanguages } from '../types/available-languages';
 
 @Injectable({
   providedIn: 'root'
@@ -7,10 +8,10 @@ export class LanguageService {
 
   constructor() { }
 
-  selectedLanguage: string = 'heb';
-
+  selectedLanguage:string = "HEB";
+ 
   languageConfig: any = {
-    heb: {
+    HEB: {
       fullName: 'שם מלא',
       email: 'אימייל',
       mainCharacter: 'שם החוגג/ת',
