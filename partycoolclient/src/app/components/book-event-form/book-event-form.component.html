@@ -29,7 +29,7 @@
     </div>
     <div class="form-item">
         <label for="eventDate">{{languageShort.eventDate}}</label>
-        <input id="eventDate" type="date" min="{{currentDate | date:'y-0M-0d' }}">
+        <input id="eventDate" type="date" [min]="formatDate()">
     </div>
     
     
