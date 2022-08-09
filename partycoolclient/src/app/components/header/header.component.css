@@ -4,6 +4,9 @@
     justify-content: space-evenly;
     flex-direction: row-reverse;
     align-items: center;
+    border: 2px solid red;
+
+
 }
 
 input {

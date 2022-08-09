@@ -1,0 +1,45 @@
+#formBackground {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    border: 2px green solid;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+#formBackground:hover+#loginForm {
+    opacity: 0.8;
+}
+
+#loginForm {
+    position: absolute;
+    display: grid;
+    left: 50%;
+    width: 300px;
+    height: fit-content;
+    border: 2px purple solid;
+    transform: translateX(-50%);
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(6, 80px);
+    z-index: 5;
+}
+
+.form-header {
+    
+}
+
+.form-item {
+    position: relative;
+    display: flex;
+    grid-column: span 2;
+    border: 3px solid salmon;
+    font-size: large;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    border: none;
+    width: 100%;
+}

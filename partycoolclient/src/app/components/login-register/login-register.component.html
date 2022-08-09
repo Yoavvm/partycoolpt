@@ -1,0 +1,15 @@
+<div *ngIf="userService.isLoginRendered">
+    <div id="formBackground" (click)="userService.toggleLogin(false)"></div>
+    <div *ngIf="userService.isLoginRendered" id="loginForm">
+        <div class="form-header">login/register</div>
+        <div class="form-header">login/register</div>
+        <div class="form-item">email:</div>
+        <div class="form-item">
+            <input type="text" placeholder="email">
+        </div>
+        <div class="form-item"></div>
+        <div class="form-item"></div>
+        <div class="form-item"></div>
+    </div>
+</div>
+
